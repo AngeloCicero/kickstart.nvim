@@ -279,6 +279,14 @@ require('lazy').setup({
     },
   },
 
+  -- Zen mode
+  {
+    'folke/zen-mode.nvim',
+    opts = {
+      vim.keymap.set('n', '<C-k>z', '<cmd>:Zen<CR>', { desc = 'Zen mode' }),
+    },
+  },
+
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
   --
   -- This is often very useful to both group configuration, as well as handle
